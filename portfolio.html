@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        container: {
+          center: true,
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="bg-[#f7f7f7] dark:bg-gray-950 font-['Poppins'] ">
+  <div class="container p-5 ">
+
+    <!-- Header -->
+    <header>
+      <nav class="flex flex-row items-center justify-between">
+        <h1 class="text-2xl font-bold dark:text-white">Port<span class="text-indigo-500">Folio</span></h1>
+        <ul class="flex flex-row gap-x-3 items-center dark:text-white">
+          <li><a href="#" class="hover:text-blue-500 hover:font-semibold">Home</a></li>
+          <li><a href="#project" class="hover:text-blue-500 hover:font-semibold">Project</a></li>
+          <li><a href="#contact" class="hover:text-blue-500 hover:font-semibold">Contact</a></li>
+          <li>
+            <div id="theme-toggle"
+              class="flex items-center justify-center w-8 h-8 border border-gray-950 dark:border-white rounded-full cursor-pointer">
+              <i id="theme-icon" class="fa-reguler fas fa-sun text-gray-950 dark:text-white text-lg"></i>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Hero Section -->
+    <section
+      class="p-5 flex lg:flex-row lg:gap-x-24 md:flex-col-reverse md:gap-24 flex-col-reverse gap-y-20 py-20 dark:text-white items-center">
+      <div class="flex flex-col max-w-lg gap-y-4 mt-10">
+        <h1 class="lg:text-5xl md:text-4xl font-bold text-3xl">Hello👋
+        </h1>
+        <div class="flex flex-col gap-y-2 w-full">
+          <h3 class="lg:text-4xl md:text-3xl font-bold text-2xl">I Am Rizqi Noor <span
+              class="text-indigo-500">Fauzan</span>
+          </h3>
+          <h5 class="lg:text-xl font-semibold">Informatics Student | Front End Developer</h5>
+          <div class="mt-10">
+            <a href="#contact"
+              class="bg-indigo-500 text-white px-6 py-3 rounded-md hover:border hover:border-indigo-500 hover:text-indigo-500 hover:bg-transparent">
+              Let's Talk
+            </a>
+          </div>
+          <div class="flex flex-row gap-x-6 ml-2 mt-10 lg:mt-20">
+            <a href="https://github.com/Rizqi-noor-fauzan"
+              class="bg-indigo-500 text-white px-3 py-2 rounded-full hover:border hover:bg-transparent hover:text-indigo-500 hover:border-indigo-500 transition duration-300"><i
+                class="fa-brands fa-github text-2xl"></i></a>
+            <a href="https://www.linkedin.com/in/rizqinoorfauzan/"
+              class="bg-indigo-500 text-white px-3 py-2 rounded-full hover:border hover:bg-transparent hover:text-indigo-500 hover:border-indigo-500 transition duration-300"><i
+                class="fa-brands fa-linkedin text-2xl"></i></a>
+            <a href="https://t.me/fauzanRizqi32"
+              class="bg-indigo-500 text-white px-3 py-2 rounded-full hover:border hover:bg-transparent hover:text-indigo-500 hover:border-indigo-500 transition duration-300"><i
+                class="fa-brands fa-telegram text-2xl"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <img src="image/website.svg" class="lg:w-[450px] lg:ml-[160px] md:w-[400px] w-[300px]" alt="">
+      </div>
+    </section>
+  </div>
+
+
+  <div class="-mt-20">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#6366f1" fill-opacity="1"
+        d="M0,224L80,197.3C160,171,320,117,480,128C640,139,800,213,960,224C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+
+  <!-- Projects Section -->
+  <section class="p-10 container min-h-screen" id="project">
+    <h1 class="font-bold text-3xl text-center dark:text-white">My Project</h1>
+    <div class="grid grid-cols-1 mt-8 sm:grid-cols-1 xl:grid-cols-2 gap-6">
+
+      <!-- Project 1 -->
+      <div
+        class="group relative block bg-black dark:border dark:border-white rounded-md transition-transform duration-300 sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px]">
+        <!-- Image -->
+        <img alt="" src="image/project-1.png"
+          class="absolute inset-0 h-full w-full rounded-md object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+        <!-- Overlay Content -->
+        <div class="relative h-full flex items-center flex-col gap-y-4 justify-center px-5 py-10 lg:py-[65px]">
+          <!-- Text -->
+          <div class="transform opacity-0 transition-all group-hover:opacity-100">
+            <a href="https://rizqi-noor-fauzan.github.io/Front-End-Mentor-Challenge-Profile-Card/"
+              class="text-sm text-white bg-indigo-500 bg-opacity-100 px-4 py-2 rounded">
+              View Site
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 1 End -->
+
+      <!-- Project 2 -->
+      <div
+        class="group relative block bg-black dark:border dark:border-white rounded-md transition-transform duration-300 sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px]">
+        <!-- Image -->
+        <img alt="" src="image/project-2.png"
+          class="absolute inset-0 h-full w-full rounded-md object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+        <!-- Overlay Content -->
+        <div class="relative h-full flex items-center flex-col gap-y-4 justify-center px-5 py-10 lg:py-[65px]">
+          <!-- Text -->
+          <div class="transform opacity-0 transition-all group-hover:opacity-100">
+            <a href="https://rizqi-noor-fauzan.github.io/Food-Recipe-App-/"
+              class="text-sm text-white bg-indigo-500 bg-opacity-100 px-4 py-2 rounded">
+              View Site
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 End -->
+
+
+      <!-- Project 3 -->
+      <div
+        class="group relative block bg-black dark:border dark:border-white rounded-md transition-transform duration-300 sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px]">
+        <!-- Image -->
+        <img alt="" src="image/project-3.png"
+          class="absolute inset-0 h-full w-full rounded-md object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+        <!-- Overlay Content -->
+        <div class="relative h-full flex items-center flex-col gap-y-4 justify-center px-5 py-10 lg:py-[65px]">
+          <!-- Text -->
+          <div class="transform opacity-0 transition-all group-hover:opacity-100">
+            <a href="https://github.com/Rizqi-noor-fauzan/projek-akhir-vsga"
+              class="text-sm text-white bg-indigo-500 bg-opacity-100 px-4 py-2 rounded">
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 End -->
+
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <footer class="min-h-screen bg-white dark:bg-gray-900 lg:flex" id="contact">
+    <div class="flex flex-col justify-center w-full p-8 lg:bg-gray-100 lg:dark:bg-gray-800 lg:px-12 xl:px-32 lg:w-1/2">
+      <h1 class="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">Contact Us</h1>
+
+      <p class="mt-4 text-gray-500 dark:text-gray-400">
+        Thank you for visiting my portfolio! If you're interested in collaborating, have any questions, or would like to
+        discuss
+        opportunities further, please don't hesitate to contact me.
+      </p>
+
+      <div class="mt-6 md:mt-8">
+        <h3 class="font-medium text-gray-600 dark:text-gray-300 ">Follow us</h3>
+
+        <div class="flex mt-4 -mx-1.5 gap-x-3">
+          <a href="https://github.com/Rizqi-noor-fauzan"
+            class="bg-indigo-500 text-white px-3 py-2 rounded-full hover:border hover:bg-transparent hover:text-indigo-500 hover:border-indigo-500 transition duration-300"><i
+              class="fa-brands fa-github text-2xl"></i></a>
+          <a href="https://www.linkedin.com/in/rizqinoorfauzan/"
+            class="bg-indigo-500 text-white px-3 py-2 rounded-full hover:border hover:bg-transparent hover:text-indigo-500 hover:border-indigo-500 transition duration-300"><i
+              class="fa-brands fa-linkedin text-2xl"></i></a>
+          <a href="https://t.me/fauzanRizqi32"
+            class="bg-indigo-500 text-white px-3 py-2 rounded-full hover:border hover:bg-transparent hover:text-indigo-500 hover:border-indigo-500 transition duration-300"><i
+              class="fa-brands fa-telegram text-2xl"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center w-full p-8 pt-0 lg:w-1/2 lg:px-12 xl:px-24 ">
+      <form onsubmit="sendMessageToWhatsApp()">
+        <div class="-mx-2 md:items-center md:flex">
+          <div class="flex-1 px-2">
+            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
+            <input type="text" placeholder="John Doe" required id="fullname"
+              class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+          </div>
+
+          <div class="flex-1 px-2 mt-4 md:mt-0">
+            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
+            <input type="email" placeholder="johndoe@example.com" required id="email"
+              class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+          </div>
+        </div>
+
+        <div class="w-full mt-4">
+          <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
+          <textarea id="messageText"
+            class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+            placeholder="Message" required></textarea>
+        </div>
+
+        <button
+          class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-indigo-500 rounded-md hover:bg-indigo-400 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-50">
+          Let's Talk
+        </button>
+      </form>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script>
+    // Light & Dark Mode
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      const icon = document.getElementById('theme-icon');
+      const html = document.querySelector('html');
+
+      if (html.classList.contains('dark')) {
+        // Switch to light mode
+        html.classList.remove('dark');
+        icon.classList.add('fa-sun');
+        icon.classList.remove('fa-moon');
+      } else {
+        // Switch to dark mode
+        html.classList.add('dark');
+        icon.classList.add('fa-moon');
+        icon.classList.remove('fa-sun');
+
+      }
+    });
+
+    // Footer / Contact
+    function sendMessageToWhatsApp() {
+      const fullName = document.getElementById('fullname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const messageText = document.getElementById('messageText').value.trim();
+      const urlToWhatsapp = `https://wa.me/6285321153067?text= Nama Saya ${fullName}, ${messageText}`;
+
+      window.open(urlToWhatsapp);
+    }
+
+  </script>
+
+</body>
+
+</html>
